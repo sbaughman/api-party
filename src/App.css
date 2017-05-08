@@ -18,6 +18,22 @@
   font-size: large;
 }
 
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links a {
+  color: #73ee11;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color
+}
+
+.nav-links a:hover {
+  color: #84ff22;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
