@@ -1,8 +1,32 @@
-.github img {
+
+.github {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.github-logo {
+    width: 100%;
+}
+
+.github input {
+    width: 80%;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.github button {
+    margin-top: 10px;
+    width: 80%;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.user-bio img {
     border-radius: 50%;
     height: 200px;
 }
 
-.github h3 {
+.user-bio h3 {
     color: #999;
 }
