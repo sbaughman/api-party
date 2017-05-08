@@ -34,14 +34,23 @@ class UserBio extends Component {
   }
   
   render() {
+    let el;
+    if (this.state.login) {
+      el = 
+        <span>
+          <img src={this.state.avatar_url} alt="user" />
+          <h2>{this.state.login}</h2>
+          <h3>followers: {this.state.followers}</h3>
+          <h3>following: {this.state.following}</h3>
+          <h3>location: {this.state.location}</h3>
+          <a href={this.state.html_url} target="_">Link to {this.state.login}'s profile</a>
+        </span>
+    } else {
+      el = "LOADING..."
+    }
     return (
       <div className="user-bio">
-        <img src={this.state.avatar_url} alt="user" />
-        <h2>{this.state.login}</h2>
-        <h3>followers: {this.state.followers}</h3>
-        <h3>following: {this.state.following}</h3>
-        <h3>location: {this.state.location}</h3>
-        <a href={this.state.html_url} target="_">Link to {this.state.login}'s profile</a>
+        {el}
       </div>
     );
   }
