@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-do
 
 import Github from './Github';
 import Nasa from './Nasa';
+import Homework from './Homework';
 
 ReactDOM.render(
   <Router>
@@ -21,12 +22,16 @@ ReactDOM.render(
           <li>
             <NavLink to={'/nasa'}>NASA API</NavLink>
           </li>
+          <li>
+            <NavLink to={'/homework'}>Homework</NavLink>
+          </li>
         </ul>
       </div>
       <Switch>
         <Route exact path='/' component={App} />
         <Route path='/github' component={Github} />
         <Route path='/nasa' component={Nasa} />
+        <Route path='/homework' component={Homework} />
       </Switch>
     </div>
   </Router>,
