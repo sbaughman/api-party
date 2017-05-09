@@ -6,6 +6,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom'
 
 import Github from './Github';
+import Nasa from './Nasa';
 
 ReactDOM.render(
   <Router>
@@ -17,11 +18,15 @@ ReactDOM.render(
           <li>
             <NavLink to={'/github'}>Github API</NavLink>
           </li>
+          <li>
+            <NavLink to={'/nasa'}>NASA API</NavLink>
+          </li>
         </ul>
       </div>
       <Switch>
         <Route exact path='/' component={App} />
         <Route path='/github' component={Github} />
+        <Route path='/nasa' component={Nasa} />
       </Switch>
     </div>
   </Router>,
