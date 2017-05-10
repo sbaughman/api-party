@@ -13,8 +13,10 @@ ReactDOM.render(
   <Router>
     <div className="App">
       <div className="App-header">
-        <h1>API Party</h1>
-        <h3>Get <i>all</i> the API data</h3>
+        <div className="App-headings">
+          <h3>There's no party like an</h3>
+          <h1>API Party</h1>
+        </div>
         <ul className="nav-links">
           <li>
             <NavLink to={'/github'}>Github API</NavLink>

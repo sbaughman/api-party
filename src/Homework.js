@@ -1,4 +1,5 @@
 import React from 'react'
+import './Homework.css';
 
 function Homework(props) {
   return (

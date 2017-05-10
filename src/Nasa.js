@@ -14,7 +14,7 @@ function Nasa(props) {
     <div className="nasa">
       <img className="nasa-logo" src="https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png" alt="nasa" />
 
-      <h2>Select a mars rover</h2>
+      <h2>Select a mars rover.</h2>
       <ul className="nav-links">
         <li>
           <NavLink to='/nasa/curiosity'>Curiosity</NavLink>
